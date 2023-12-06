@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- Load TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <!-- Load the QnA model -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/qna"></script>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-centered-container">
+        <h1>Question and answer model</h1>
+        <h3 class="header-border">Train with harry potter text</h3>
+        <p></p>
+        
+        <h4>Try the test passage!</h4>
+        <div id='test-buttons'></div>
+
+        <div>
+            <h4>Enter the model's input passage here</h4>
+            <textarea id='input-text' rows="20" cols="100" placeholder="Write the input text..."></textarea>
+        </div>
+        
+        <div>
+            <h4>Enter the question to ask</h4>
+            <textarea id='question' rows="5" cols="100" placeholder="Write the input text..."></textarea>
+        </div>
+        <h4>Click to answer the question</h4>
+        <div id="answer-button"></div>
+        <h4>The model's answers</h4>
+        <div id='answer'></div>
+        
+        <script src="./index.js"></script>
+
+        
+    </div>
+</body>
+
+</html>
